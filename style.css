@@ -1,0 +1,369 @@
+*,*::after,*::before{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+#header{
+    background-image: url("images/bg-hero-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: hsl(193, 100%, 96%);
+    
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:40px 60px;
+}
+.nav button{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 60px;
+    box-shadow: 2px 2px rgba(130, 129, 129, 0.1);
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: hsl(192, 100%, 9%);
+    
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding:0px 60px;
+}
+.main img{
+    width: 670px;
+    height: 420px;
+}
+.main h1{
+    font-size: 44px;
+    font-family: "Poppins";
+    font-weight: 600;
+    width: 80%;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    line-height: 58px;
+    color: hsl(192, 100%, 9%);
+}
+.main p{
+    font-size: 17px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    width: 89%;
+    margin-bottom: 40px;
+}
+.free{
+    padding: 12px 80px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 30px;
+    box-shadow: 2px 2px rgba(130, 129, 129, 0.1);
+    border: none;
+    color: hsl(193, 100%, 96%);
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.card{
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(130, 129, 129, 0.1);
+    border: none ;
+    margin: 60px;
+    background-color: white;
+    
+
+}
+.cardbody{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+.grow img{
+    width: 250px;
+    height: 250px;
+}
+.together{
+    margin-top: 70px;
+}
+.together p{
+    width: 54%;
+    margin-top: 15px;
+    color: hsl(208, 11%, 55%);
+    font-family: "Open Sans";
+    font-weight: 400;
+   
+}
+.together h3{
+    width: 80%;
+    font-size: 29px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+.paginate h3{
+    width: 80%;
+    font-size: 29px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+.paginate{
+    padding-left: 350px;
+    margin-top: 70px;
+}
+.paginate p{
+    margin-top: 15px;
+    color: hsl(208, 11%, 55%);
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.info{
+    position: absolute;
+    width: 68%;
+    margin:0 16%;
+    z-index: 2;
+    top: 60px;
+    
+}
+.build{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info h1{
+    margin-bottom: 30px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+   
+}
+.comm{
+    position: relative;
+    
+}
+#footer{
+    background-color: hsl(192, 100%, 9%);
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: hsl(208, 11%, 55%);
+    padding-top: 150px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    z-index: 1;
+}
+
+.fb{
+    width: 37px;
+    height: 37px;
+    margin-right: 12px;
+}
+.logo{
+    width: 180px;
+    filter: brightness(0) invert(1);
+
+}
+.contact{
+    margin-top: 10px;
+}
+.locate, .phone, .email{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+
+}
+.locate img, .phone img, .email img{
+   width: 15px;
+   height: 15px;
+   margin-right: 15px;
+}
+.locate p{
+    width: 300px;
+
+}
+.about{
+    margin-top: 45px;
+}
+.about p{
+    margin: 15px 0;
+}
+.social div{
+    display: flex;
+    flex-direction: row;
+    margin-top:30px ;
+}
+.social img{
+    margin-right: 15px;
+}
+.social p{
+    margin-top: 150px;
+}
+
+@media (max-width:800px) {
+    .main img{
+        width: 270px;
+        height: 350px;
+    }
+    .main p{
+        width: 90%;
+        font-size: 11.9px;
+        margin-bottom: 20px;
+    }
+    .main h1{
+        width: 100%;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .paginate{
+        padding-left: 40px;
+        margin-top: 20px;
+    }
+    .together{
+        margin-top:20px ;
+    }
+    .together p{
+        font-size: 12px;
+        width: 87%;
+    }
+    .paginate p{
+        font-size: 12px;
+        width: 100%;
+    }
+    .paginate h3,.together h3{
+        font-size: 22px;
+        width: 100%;
+    }
+    .cardbody{
+        padding-left: 40px;
+    }
+    .grow img{
+        width: 150px;
+        height: 150px;
+    }
+    .free{
+        padding: 10px 30px;
+    }
+    .info h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    #footer{
+        font-size: 12px;
+    }
+    .locate p{
+        width: 250px;
+    }
+
+}
+
+@media (max-width:600px) {
+    #header{
+        background-image: url("images/bg-hero-mobile.svg");
+        height: 700px;
+    }
+    .nav img{
+        width: 80px;
+        height: 30px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main img{
+        height: 200px;
+        width: 300px;
+    }
+    .cardbody{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+        padding:30px 0;
+    }
+    .card{
+        padding: 20px;
+        margin: 30px 20px;
+    }
+    #footer{
+        flex-direction: column;
+        height: 650px;
+        padding-left: 30px;
+    }
+    .nav{
+        padding: 20px 10px;
+    }
+    .nav button{
+        padding: 8px 30px;
+    }
+    .main{
+        text-align: center;
+    }
+    .main h1{
+        margin-top: 10px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .free{
+        padding: 10px 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .main p{
+        width: 87%;
+    }
+    .cardbdy{
+        flex-direction: column-reverse;
+    }
+    .grow img{
+        width: 250px;
+        height: 250px;
+    }
+    .paginate{
+        padding-left: 0;
+        margin-top: 20px;
+        
+    }
+    .together p{
+        width: 90%;
+        padding:0 22px ;
+        margin:20px auto;
+    }
+    .paginate p{
+        width: 90%;
+        padding:0 22px ;
+        margin:20px auto;
+    }
+    .info{
+        width: 90%;
+    }
+    .info h1{
+        margin-top: 20px;
+    }
+    .about{
+        margin-top: 3px;
+    }
+    .social{
+        margin-bottom: 10px;
+    }
+    .social div{
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .social p{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .media {
+        margin-right: 3px;
+    }
+}
